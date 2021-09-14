@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="607.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yonsis.TiyatroController">
+   <children>
+      <TextField fx:id="b_id" layoutX="41.0" layoutY="101.0" prefHeight="25.0" prefWidth="115.0" promptText="ID" style="-fx-background-color: ORANGE;" />
+      <TextField fx:id="b_fiyat" layoutX="41.0" layoutY="141.0" prefHeight="25.0" prefWidth="115.0" promptText="FIYAT" style="-fx-background-color: ORANGE;" />
+      <TableView fx:id="tableview2" layoutX="175.0" layoutY="81.0" onMouseClicked="#getSelected" prefHeight="540.0" prefWidth="527.0">
+         <columns>
+            <TableColumn fx:id="id2" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="fiyat2" prefWidth="75.0" text="fiyat" />
+            <TableColumn fx:id="adres2" prefWidth="75.0" text="adres" />
+            <TableColumn fx:id="oyunadi2" prefWidth="75.0" text="Oyun Adı" />
+            <TableColumn fx:id="turu2" prefWidth="75.0" text="Türü" />
+            <TableColumn fx:id="durum2" prefWidth="75.0" text="Bölüm" />
+            <TableColumn fx:id="tarih2" prefWidth="75.0" text="tarih" />
+         </columns>
+      </TableView>
+      <TextField fx:id="t_id" layoutX="41.0" layoutY="101.0" prefHeight="25.0" prefWidth="115.0" promptText="ID" style="-fx-background-color: ORANGE;" />
+      <TextField fx:id="t_fiyat" layoutX="41.0" layoutY="141.0" prefHeight="25.0" prefWidth="115.0" promptText="FIYAT" style="-fx-background-color: ORANGE;" />
+      <TextField fx:id="t_oyunadi" layoutX="41.0" layoutY="311.0" prefHeight="25.0" prefWidth="115.0" promptText="OYUN ADI" style="-fx-background-color: ORANGE;" />
+      <TextField fx:id="t_turu" layoutX="41.0" layoutY="351.0" prefHeight="25.0" prefWidth="115.0" promptText="TÜRÜ" style="-fx-background-color: ORANGE;" />
+      <TextField fx:id="t_durum" layoutX="41.0" layoutY="389.0" prefHeight="25.0" prefWidth="115.0" promptText="BÖLÜM" style="-fx-background-color: ORANGE;" />
+      <TextField fx:id="t_tarih" layoutX="41.0" layoutY="431.0" prefHeight="25.0" prefWidth="115.0" promptText="TARİH" style="-fx-background-color: ORANGE;" />
+      <Button layoutX="719.0" layoutY="81.0" mnemonicParsing="false" onAction="#ekle" prefHeight="52.0" prefWidth="94.0" style="-fx-background-color: GREEN;" text="EKLE" />
+      <Button layoutX="718.0" layoutY="141.0" mnemonicParsing="false" onAction="#guncelle" prefHeight="52.0" prefWidth="94.0" style="-fx-background-color: YELLOW;" text="GÜNCELLE" />
+      <Button layoutX="719.0" layoutY="198.0" mnemonicParsing="false" onAction="#sil" prefHeight="52.0" prefWidth="94.0" style="-fx-background-color: RED;" text="SİL" />
+      <Label alignment="CENTER" layoutX="175.0" layoutY="33.0" prefHeight="42.0" prefWidth="527.0" style="-fx-background-color: GRAY;" text="TİYATRO ORGANİZASYON" textFill="#25d0eb" textOverrun="CLIP">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Label>
+      <TextField fx:id="aratiyatro" layoutX="35.0" layoutY="470.0" onKeyPressed="#ara" prefHeight="33.0" prefWidth="127.0" promptText="ARA" style="-fx-background-color: YELLOW;" />
+      <TextArea fx:id="t_adres" blendMode="DARKEN" layoutX="41.0" layoutY="176.0" prefHeight="125.0" prefWidth="115.0" promptText="ADRES" style="-fx-background-color: ORANGE;" />
+      <Button layoutX="41.0" layoutY="45.0" mnemonicParsing="false" onAction="#geri" prefHeight="33.0" prefWidth="115.0" style="-fx-background-color: BLUE;" text="GERİ ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Reflection bottomOpacity="0.08" fraction="0.17" topOpacity="0.46" />
+         </effect></Button>
+   </children>
+</AnchorPane>
