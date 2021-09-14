@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yonsis.HakkimizdaController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="620.0" layoutX="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../newpackage/imageyon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="400.0" fitWidth="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../newpackage/s-1e555959341c44e5a9a6894943f07d69650b8fa4.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="269.0" layoutY="14.0" text="HAKKIMIZDA">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.20476190476190476">
+               <stops>
+                  <Stop color="#09b263" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="316.0" prefHeight="77.0" prefWidth="254.0" text="CREATED BY BEKİR GÖKTUĞ YEĞİN">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.20476190476190476">
+               <stops>
+                  <Stop color="#cd1b1b" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="468.0" layoutY="360.0" mnemonicParsing="false" onAction="#geri" prefHeight="37.0" prefWidth="132.0" style="-fx-background-color: yellow;" text="GERİ" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Blend mode="EXCLUSION">
+               <topInput>
+                  <DropShadow />
+               </topInput>
+            </Blend>
+         </effect>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.7761904761904762">
+               <stops>
+                  <Stop color="#2a83eb" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</Pane>
